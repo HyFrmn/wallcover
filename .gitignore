@@ -1,5 +1,8 @@
 # aptana project
 .project
+.settings
+.classpath
+lint.xml
 
 # built application files
 *.apk
