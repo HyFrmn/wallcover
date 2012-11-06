@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory android:title="Background Image" android:summary="Background Image to Display" android:key="image"><Preference android:summary="Load image from gallery." android:title="Gallery Image" android:key="image_gallery" /><EditTextPreference android:title="File" android:key="image_filepath" android:summary="Load image from sdcard."/>
+    
+    <Preference android:summary="Load image from Cloud." android:key="image_cloud" android:title="Cloud"/>
+</PreferenceCategory>
+    <PreferenceCategory android:title="Multi Image" android:summary="Options for loading multiple images." android:key="multi">
+        <CheckBoxPreference android:summaryOn="Load the images surrounding the selected image." android:key="enable_multi" android:summaryOff="Only display selected image." android:title="Enable Multi Image"/>
+        <ListPreference android:summary="Time before displaying next image." android:key="multi_rotation_time" android:title="Rotation Time" android:entries="@array/labels" android:entryValues="@array/values"/>
+        <CheckBoxPreference android:key="enable_per_screen" android:defaultValue="false" android:title="Image per home screen." android:enabled="true"/>
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>
