@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
     
-    <PreferenceCategory android:title="Background Image" android:summary="Background Image to Display" android:key="image"><Preference android:summary="Load image from gallery." android:title="Gallery Image" android:key="image_gallery" /><EditTextPreference android:title="File" android:key="image_filepath" android:summary="Load image from sdcard."/>
+    <PreferenceCategory android:title="Background Image" android:summary="Background Image to Display" android:key="image"><Preference android:summary="Load image from gallery." android:title="Gallery Image" android:key="image_gallery" /><Preference android:title="File" android:key="image_filepath" android:summary="Load image from sdcard."/>
     
     <Preference android:summary="Load image from Cloud." android:key="image_cloud" android:title="Cloud"/>
 </PreferenceCategory>
