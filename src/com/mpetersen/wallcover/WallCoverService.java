@@ -1,4 +1,4 @@
-package com.hyfrmn.wallcover;
+package com.mpetersen.wallcover;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -228,7 +228,9 @@ public class WallCoverService extends WallpaperService {
 				String imageFilePath = images.get(currentImageIndex);
 				loadImage(imageFilePath);
 			}
-			draw();
+			if (visible){
+				draw();				
+			}
 			if (isMulti) {
 				handler.postDelayed(updateRunner, 1000 * getRotationTime());
 			}

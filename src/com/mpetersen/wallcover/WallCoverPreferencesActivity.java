@@ -1,4 +1,4 @@
-package com.hyfrmn.wallcover;
+package com.mpetersen.wallcover;
 
 import com.mpetersen.wallcover.R;
 
